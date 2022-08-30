@@ -166,54 +166,60 @@ border-radius: 5px;
 
 /*------------------------------------------------------------Responsiveness-----------------------------------------*/
 @media only screen and (max-width: 667px) {
-  body { position:fixed;
- 
+ body { 
+  position:fixed;
   }
-  .video{
-position:fixed;
-overflow: hidden;
+.video{
+  position:fixed;
+  overflow: hidden;
 }
 .city-description {
-  font-size: 24px;
-  margin-left:30px;
+  position: relative;
+  bottom: 90px;
+  font-size: 20px;
+  margin-left:0px;
 }
-
 .city-name {
-  font-size: 70px;
-  margin-left: 30px;
-  margin-bottom: -150px;
+  font-size: 40px;
+  margin-left: 0px;
+ position: relative;
+  bottom: 100px;
 }
 .city-container { 
   position: relative;
   max-width: 480px;
+  margin-bottom: -150px;
 }
 .app{ 
-
+  max-height: 750px;
  right: 0;
  left: 0;
  margin-left: 150px; 
- width: 410px;
+
+ width: 360px;
   background-size: 100px;
-  background-position: 30px 190px;
+  background-position: 15px 200px;
 }
 .hi-temp {
-  font-size: smaller;
+  font-size: small;
+  bottom: 100px;
 }
 
 .low-temp {
-  font-size: 9px;
+  font-size: 10px;
+
 }
 .daily-icon{
   display: flex;
   position: relative;
-right: 10px;
-height: 50px;
-width: 50px;
+  right: 38px;
+  height: 50px;
+  width: 50px;
 }
 .current-temp {
-
- right: 20px;
-  font-size: 20px;
+  position: relative;
+  top: 100px;
+  font-size: 25px;
   font-weight: bold;
 
 }
@@ -221,11 +227,12 @@ width: 50px;
   font-size: 10px;
   position: relative;
   font-weight: bold;
-  top: -10px;
-  left: -12px;
   text-decoration: none;
 }
 .conditions-list{
+  font-size: medium;
+  position: relative;
+  bottom: 100px;
   margin-top: 0px;
 }
 .active-units {
@@ -243,4 +250,14 @@ font-size: 13px;
   color: lightgrey;
   font-size: 8px;
   text-decoration: solid;
+}
+.weather-title{
+  position: relative;
+  margin-bottom: 150px;
+}
+.daily-icon,
+  #wx-icon {
+  margin-left: 30px;
+}
+
 }
